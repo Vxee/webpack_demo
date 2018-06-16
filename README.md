@@ -15,4 +15,7 @@ to fix repeat use webpack-command will create many bundle.js so we use a plugin 
 ##### 04_css_loader  
 allow include CSS in JS file.use css-loader to read css file,style-loader to insert `<style>` into html  
 
+##### 05_image_loader  
+allow include img in JS file.use image-loader and file-loader.  
+
 
