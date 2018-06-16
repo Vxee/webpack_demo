@@ -10,4 +10,9 @@ use `webpack-dev-server` can create a local server
 
 ##### 02_multiple_entry_files  
 allow multiple entry files  
-to fix repeat use webpack-command will create many bundle.js so we use a plugin to delete old files automatically.
+to fix repeat use webpack-command will create many bundle.js so we use a plugin to delete old files automatically.  
+
+##### 04_css_loader  
+allow include CSS in JS file.use css-loader to read css file,style-loader to insert `<style>` into html  
+
+
