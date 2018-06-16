@@ -18,4 +18,5 @@ allow include CSS in JS file.use css-loader to read css file,style-loader to ins
 ##### 05_image_loader  
 allow include img in JS file.use image-loader and file-loader.  
 
-
+##### 07_uglify_js_plugin  
+allow to minified js
