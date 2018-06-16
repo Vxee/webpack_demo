@@ -19,4 +19,7 @@ allow include CSS in JS file.use css-loader to read css file,style-loader to ins
 allow include img in JS file.use image-loader and file-loader.  
 
 ##### 07_uglify_js_plugin  
-allow to minified js
+allow to minified js  
+
+##### 08_html_webpack_plugin and browser_webpack_plugin  
+html_webpack_plugin can create `index.html` for you ,open-browser-webpack-plugin can open a new browser tab when webpack loads.

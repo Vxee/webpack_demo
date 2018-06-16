@@ -1,6 +1,8 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const HtmlwebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -9,7 +11,14 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new UglifyJsPlugin()
+        new UglifyJsPlugin(),
+        new HtmlwebpackPlugin({
+            title: 'Webpack-demos',
+            filename: 'index.html'
+        }),
+        new OpenBrowserPlugin({
+            url: 'http://localhost:8080'
+        })
     ],
     output: {
         filename: 'bundle.js',
